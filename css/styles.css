@@ -1,12 +1,15 @@
 *{
   box-sizing: border-box;
   margin: 0;
+  font-size: 1em;
 }
 
 body{
   font-family: serif;
   background-image: url(../images/small_steps.png);
-  min-width: 340px;
+  min-width: 360px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 ul{
@@ -38,7 +41,7 @@ h1{
 
 .toggle-nav{
   width: 45px;
-  margin: 5px 0;
+  margin: 1% 0;
   position: absolute;
   top: 0;
   right: 10px;
@@ -66,7 +69,7 @@ h1{
 .banner-container h3{
   color: white;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.2em;
   position: absolute;
   left: 50%;
   top: 15%;
@@ -78,7 +81,7 @@ h1{
   color: white;
   font-size: 1.7em;
   left: 50%;
-  top: 120px;
+  top: 45%;
   position: absolute;
   transform: translateX(-50%);
   text-align: center;
@@ -92,13 +95,15 @@ h1{
   border-radius: 10px;
   position: absolute;
   left: 50%;
-  top: 220px;
+  top: 70%;
   transform: translateX(-50%);
 }
 
 .services{
   background-color: white;
 }
+
+/*##### SECCION SERVICIOS ####*/
 
 .services h2, h3, h4{
   text-align: center;
@@ -158,4 +163,111 @@ h1{
 .portfolio-01{
   width: 90%;
   margin: auto;
+}
+
+@media (min-width: 640px) {
+  .container{
+    margin: auto;
+  }
+  .toggle-nav{
+    display: none;
+  }
+  .main-header{
+   position: relative;
+   background-color: rgba(114, 117, 110, 0.4);
+  }
+  .main-nav{
+    display: block;
+  }
+  .main-nav a{
+    display: inline-block;
+    float: right;
+    padding: 5px 15px;
+    background-color: inherit;
+    position: absolute;
+    top: 10px;
+  }
+  .main-nav .btn-cont{
+    right: 10px;
+  }
+  .main-nav .btn-team{
+    right: 90px;
+  }
+  .main-nav .btn-about{
+    right: 150px;
+  }
+  .main-nav .btn-port{
+    right: 220px;
+  }
+  .main-nav .btn-serv{
+    right: 310px;
+  }
+  .banner-container h3{
+    top: 35%;
+  }
+  .banner-container h2{
+    top: 45%;
+    font-size: 2.2em;
+  }
+  .banner-container .more{
+    top: 65%;
+  }
+  .services p{
+    margin: 10px;
+  }
+  .portfolio{
+    overflow: hidden;
+  }
+  .portfolio-01{
+    width: 45%;
+    margin: 40px 15px;
+    float: left;
+  }
+}
+
+@media (min-width: 960px) {
+  h1{
+    font-size: 1.8em;
+    padding-left: 55px;
+  }
+  .main-nav a{
+    display: inline-block;
+    float: right;
+    padding: 5px 15px;
+    background-color: inherit;
+    position: absolute;
+    top: 10px;
+    font-size: 1.5em;
+  }
+  .banner-container img{
+    width: 100%;
+    height: 600px;
+  }
+  .banner-container h3{
+    top: 42%;
+    font-size: 2em;
+  }
+  .banner-container h2{
+    top: 55%;
+    font-size: 3em;
+  }
+  .banner-container .more{
+    top: 75%;
+    font-size: 1.5em;
+  }
+  .services{
+    overflow: hidden;
+  }
+  .block-services{
+    width: 31.66%;
+    margin: 20px 0.83%;
+    float: left;
+  }
+  .portfolio-01{
+    width: 30%;
+    margin: 20px 1.66%;
+    float: left;
+  }
+
+
 }
