@@ -69,34 +69,36 @@ h1{
 .banner-container h3{
   color: white;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.4em;
   position: absolute;
   left: 50%;
-  top: 15%;
+  top: 20%;
   transform: translateX(-50%);
-  display: inline-block;
+  width: 100%;
 }
 
 .banner-container h2{
   color: white;
-  font-size: 1.7em;
+  font-size: 3em;
   left: 50%;
-  top: 45%;
+  top: 37%;
   position: absolute;
   transform: translateX(-50%);
   text-align: center;
-  display: inline-block;
+  width: 100%;
 }
 
 .more{
   color: white;
   background-color: #FED234;
-  padding: 15px 21px;
+  padding: 19px 20px;
   border-radius: 10px;
   position: absolute;
   left: 50%;
-  top: 70%;
+  top: 75%;
   transform: translateX(-50%);
+  font-size: 1.2em;
+  text-align: center;
 }
 
 .services{
@@ -238,6 +240,21 @@ h1{
     position: absolute;
     top: 10px;
     font-size: 1.5em;
+  }
+  .main-nav .btn-cont{
+    right: 20px;
+  }
+  .main-nav .btn-team{
+    right: 110px;
+  }
+  .main-nav .btn-about{
+    right: 180px;
+  }
+  .main-nav .btn-port{
+    right: 260px;
+  }
+  .main-nav .btn-serv{
+    right: 365px;
   }
   .banner-container img{
     width: 100%;
